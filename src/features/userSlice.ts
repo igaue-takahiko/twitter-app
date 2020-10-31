@@ -16,7 +16,7 @@ export const userSlice = createSlice({
         login: (state, action) => {
             state.user = action.payload
         },
-        logout: (state, action) => {
+        logout: (state) => {
             state.user = { uid: "", photoUrl: "", displayName: "" }
         }
     }
